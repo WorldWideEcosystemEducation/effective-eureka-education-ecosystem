@@ -1,65 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Music</title>
+  <title>Play Music</title>
   <style>
     body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 60px;
     }
-
-    h1 {
-      font-size: 48px;
-      margin-bottom: 5px;
-    }
-
-    h2 {
-      font-size: 26px;
-      color: #555;
-      margin-bottom: 40px;
-    }
-
-    .btn {
-      background: #4a6cff;
-      color: white;
-      padding: 15px 35px;
-      border-radius: 10px;
+    button {
+      padding: 18px 30px;
       font-size: 22px;
-      cursor: pointer;
+      border-radius: 12px;
+      background: #4a7cff;
+      color: white;
       border: none;
+      cursor: pointer;
       transition: 0.2s;
-      margin: 10px;
     }
-
-    .btn:hover {
-      background: #3a55d6;
+    button:hover {
+      background: #2f5fff;
       transform: scale(1.05);
     }
   </style>
 </head>
 <body>
 
-  <h1>Music</h1>
-  <h2>For Google Sites</h2>
+<audio id="song" src="https://drive.google.com/uc?export=download&id=1DtjzxgOqMGP_LJZHOseHYFAyPlL0fVu3"></audio>
 
-  <!-- HOT PURSUIT -->
-  <button class="btn" onclick="document.getElementById('song1').play()">
-    Hot Pursuit
-  </button>
-  <audio id="song1" src="https://docs.google.com/uc?export=download&id=1DtjzxgOqMGP_LJZHOseHYFAyPlL0fVu3"></audio>
-
-  <!-- TIMMY NATIONAL ANTHEM -->
-  <button class="btn" onclick="document.getElementById('song2').play()">
-    Timmy National Anthem
-  </button>
-  <audio id="song2" src="https://docs.google.com/uc?export=download&id=1p7V5h8ShIM2D1ePBxyf0XQZ2NvTIhRpN"></audio>
-
-  <!-- DIRTY BIRDIES -->
-  <button class="btn" onclick="document.getElementById('song3').play()">
-    Dirty Birdies
-  </button>
-  <audio id="song3" src="https://docs.google.com/uc?export=download&id=1t4nFcbXkthovnO_VtkUnMB2QOEdtGTu4"></audio>
+<button onclick="document.getElementById('song').play()">
+  ▶ Play Dirty Birdies
+</button>
 
 </body>
 </html>
