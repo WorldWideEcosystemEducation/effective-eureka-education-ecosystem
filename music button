@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Play Music</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 18px 30px;
+      font-size: 22px;
+      border-radius: 12px;
+      background: #4a7cff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #2f5fff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<audio id="song" src="https://drive.google.com/uc?export=download&id=1DtjzxgOqMGP_LJZHOseHYFAyPlL0fVu3"></audio>
+
+<button onclick="document.getElementById('song').play()">
+  ▶ Play Dirty Birdies
+</button>
+
+</body>
+</html>
